@@ -1,0 +1,215 @@
+:root{
+    --main-text-color: #6E728E;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/montserrat-v24-latin-700.woff2") format("woff2"), 
+         url("../fonts/montserrat-v24-latin-700.woff") format("woff");
+}
+
+body {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 700;
+}
+
+.container{
+    width: 1100px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hero{
+    padding-top: 71px;
+    padding-bottom: 104px;
+    background-color: #F7F7FE;
+    background-image: url("../images/hero-img.svg"), url("../images/hero-pic.svg");
+    background-repeat: no-repeat;
+    background-size: 472px 757px;
+    background-position: calc(50% + 580px) calc(50% - 135px), calc(50% - 590px) calc(50% + 520px);
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.hero-title{
+    margin-top: 0;
+    margin-bottom: 137px;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: var(--main-text-color);
+}
+
+.hero-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-item{
+    padding: 31px;
+    background-color: #fff;
+    box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
+    border-radius: 10px 0px 0px 10px;
+    text-align: center;
+}
+
+.hero-item:nth-child(2){
+    margin-top: 0;
+    padding-top: 65px;
+    padding-bottom: 55px;
+    background-image: linear-gradient(135.06deg, #A2A7F0 -0.05%, #696EDD 100.05%);
+    box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
+    border-radius: 10px;
+}
+
+.item-title{
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: var(--main-text-color);
+}
+
+.cost-box{
+    display: flex;
+}
+
+.cost-box::before{
+    width: 26px;
+    height: 60px;
+    content: "";
+    margin-right: 8px;
+    margin-left: 40px;
+    background-image: url("../images/dollar-icon.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: calc(50%) calc(50% + 7px);
+}
+
+.professional-cost{
+    margin-bottom: 4px;
+}
+
+.professional-cost::before{
+    background-image: url("../images/dollar.svg");
+}
+
+.cost{
+    margin: 0;
+}
+
+.professional-title{
+    color: #fff;
+}
+
+.cost{
+    display: inline-block;
+    margin-bottom: 32px;
+    font-size: 72px;
+    line-height: 71px;
+    letter-spacing: -2.16px;
+    color: #4A4D60;
+}
+
+.professional-cost{
+    color: #fff;
+}
+
+.list-item{
+    width: 288px;
+    margin-bottom: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #DBDCE3;
+    text-align: center;
+}
+
+.list-item:nth-child(3){
+    margin-bottom: 42px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #DBDCE3;
+}
+
+.professional{
+    border-top: 1px solid #A7ABEE;
+}
+
+.professional:nth-child(3){
+    margin-bottom: 32px;
+    border-bottom: 1px solid #A7ABEE;
+}
+
+.item-link{
+    display: inline-block;
+    font-size: 15px;
+    line-height: 28px;
+    text-align: center;
+    color: var(--main-text-color);
+}
+
+.professional-link{
+    color: #fff;
+}
+
+.hero-link{
+    padding: 14px 66px;
+    background-image: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
+    border-radius: 6px;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 1.39286px;
+    color: #FFFFFF;
+    border: 1px solid transparent;
+}
+
+.hero-link:hover{
+    color: #6D72DE;
+    background-image: linear-gradient(135deg, #fff 0%, #fff 100%);
+    border: 1px solid #6D72DE;
+}
+
+.professional-learn-link{
+    display: inline-block;
+    background-image: none;
+    color: #6D72DE;
+    background-color: #fff;
+}
+
+.professional-learn-link:hover{
+    background-image: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
+
+
+
+
+

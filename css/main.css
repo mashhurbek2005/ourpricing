@@ -113,6 +113,7 @@ a {
 }
 
 .professional-cost{
+    color: #fff;
     margin-bottom: 4px;
 }
 
@@ -122,6 +123,10 @@ a {
 
 .cost{
     margin: 0;
+}
+
+.professional-cost p{
+    color: #fff;
 }
 
 .professional-title{
